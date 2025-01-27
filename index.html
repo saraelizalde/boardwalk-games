@@ -69,7 +69,7 @@
                     games and café delights. Whether you're a casual gamer seeking a cosy nook to unwind, a board game
                     enthusiast ready for your next challenge, or a student gamer looking for a fun, affordable hangout,
                     we've got you covered.</p>
-                    <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
+                <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
             </div>
             <div class="col-12 col-xl-6">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -194,14 +194,18 @@
         </section>
 
         <!-- Events Section-->
-         <section id="events" class="container section text-center">
+        <section id="events" class="container section text-center">
             <div class="row mb-4">
                 <div class="col-12 text-center">
                     <h2 class="display-6">Join ou events</h2>
                 </div>
                 <div class="col-12 col-xl-6">
-                    <p>Whether you're delving into dungeons, reliving classic games, or competing in high-stakes tournaments, there's something for every gamer. Reservations are recommended to ensure your spot at the table. Student discounts are available, so bring your student ID and enjoy more gaming for less.</p>
-                    <p>Outside scheduled events, our shop remains open for regular play. Join us anytime to discover new games and meet fellow enthusiasts.</p>
+                    <p>Whether you're delving into dungeons, reliving classic games, or competing in high-stakes
+                        tournaments, there's something for every gamer. Reservations are recommended to ensure your spot
+                        at the table. Student discounts are available, so bring your student ID and enjoy more gaming
+                        for less.</p>
+                    <p>Outside scheduled events, our shop remains open for regular play. Join us anytime to discover new
+                        games and meet fellow enthusiasts.</p>
                 </div>
                 <div class="col-12 col-xl-6 table-responsive">
                     <table class="table table-hover text-start">
@@ -235,13 +239,67 @@
                         </tbody>
                     </table>
                     <div class="text-center">
-                    <button class="btn ms-lg-3 custom-button-filled">*Get 20% off with valid student ID</button>
+                        <button class="btn ms-lg-3 custom-button-filled">*Get 20% off with valid student ID</button>
                     </div>
                 </div>
-                
+
             </div>
             <a href="booking.html" class="btn custom-button-outline mb-5">Book now</a>
-         </section>
+        </section>
+
+        <!--Reservation-->
+        <section id="reservation" class="container section">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-6">reserve a game</h2>
+                    <p>Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the
+                        adventure begin! Fill out your details and preferred game below, and we'll have it set aside for
+                        you when you arrive.</p>
+                </div>
+                <div class="justify-content-center">
+                    <div class="col-12">
+                        <form action="success.html" method="GET">
+                            <div class="row mb-3">
+                                <div class="col-12 col-md-4 mb-3">
+                                    <label for="reservation-name" class="form-label">Full name</label>
+                                    <input class="form-control" id="reservation-name" name="name" type="text" required>
+                                </div>
+                                <div class="col-12 col-md-4 mb-3">
+                                    <label for="reservation-phone" class="form-label">Phone number</label>
+                                    <input class="form-control" id="reservation-phone" name="phone" type="number"
+                                        required>
+                                </div>
+                                <div class="col-12 col-md-4 mb-3">
+                                    <label for="reservation-email" class="form-label">Email</label>
+                                    <input class="form-control" id="reservation-email" name="email" type="email"
+                                        required>
+                                </div>
+                                <div class="col-12 col-md-8 mb-3">
+                                    <label for="event-type" class="form-label">Event type</label>
+                                    <select id="event-type" class="form-select" name="event-type" required>
+                                        <option value="" selected>Select game</option>
+                                        <option value="galaxy-pionerrs">Galaxy Pioneers</option>
+                                        <option value="mystic-woods">Mystic Woods</option>
+                                        <option value="captains-gambit">Captain's Gambit</option>
+                                        <option value="critter-quest">Critter Quest</option>
+                                        <option value="setters-of-catan">Setters of Catan</option>
+                                        <option value="monopoly">Monopoly</option>
+                                        <option value="exploding-kittens">Exploding Kittens</option>
+                                        <option value="cluedo">Cluedo</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-4 mb-3">
+                                    <label for="reservation-date" class="form-label">Requested date</label>
+                                    <input class="form-control" id="reservation-date" name="date" type="date" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn custom-button-outline">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!--Footer/Contact section-->

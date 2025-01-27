@@ -128,6 +128,12 @@ h2{
     background-color: transparent;
 }
 
+/*reservation*/
+
+#reservation button{
+    display: inline-block; 
+	float: right; 
+}
 
 
 
