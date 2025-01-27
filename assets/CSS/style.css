@@ -42,6 +42,30 @@ h2{
     margin-bottom: 2 rem;
 }
 
+/*Buttons*/
+.custom-button-filled{
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);                                                           
+    color: white;
+}
+
+.custom-button-outline{
+    border: 3px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color);
+}
+
+.custom-button-outline:hover{
+    background-color: var(--highlight-color);
+    color: white;
+}
+
 /*Navbar*/
 #navbar{
     background-color: var(--primary-color);
@@ -56,7 +80,7 @@ h2{
     font-family: var(--secondary-font);
 }
 
-/*Servies*/
+/*Services*/
 #services .card-footer{
     font-weight: bold;
     color: var(--highlight-color);
@@ -66,6 +90,10 @@ h2{
 #services .card{
     margin-bottom: 1.5rem;
 }
+
+/* Event*/
+
+
 
 /*Footer / contact*/
 #contact{
@@ -99,6 +127,10 @@ h2{
 #contact .table-dark * {
     background-color: transparent;
 }
+
+
+
+
 
 
 /* grid visualisation CSS for testing */
@@ -143,5 +175,23 @@ h2{
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
+    }
+}
+
+/* small devices (mobile, 320px ) */
+
+@media screen and (max-width: 480px) {
+    #events .table {
+        width: 100% !important; /* Ensure the table takes up the full width */
+        min-width: 0; /* Prevent table from exceeding screen width */
+    }
+
+        #events .table {
+            font-size: 0.8rem; /* Reduce font size to fit content better */
+        }
+
+    /* Make sure the container allows scrolling on small screens */
+    #events {
+        overflow-x: auto;
     }
 }
