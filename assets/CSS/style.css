@@ -15,6 +15,7 @@
 /*Global style*/
 body{
     font-family: var(--primary-font);
+    padding-top: 57.15px;
 }
 
 h1,
